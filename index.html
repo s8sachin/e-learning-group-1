@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>welcome to E-learning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <img class="img-responsive" src="./img/logo.png" alt="no image">
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right" id="demo">
+            <li class="active"><a href="#"><b>Home</b></a></li>
+            <li><a href="#"><b>We offer</b></a></li>
+            <li><a href="#"><b>About us</b></a></li>
+            <li><a href="#"><b>Course</b></a></li>
+            <li><a href="#"><b>Price</b></a></li>
+            <li><a href="#"><b>Contactus</b></a></li>
+            <li><input type="text" class="form-control input-sm" maxlength="64" placeholder="search" id="max"/></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="row" id="hi">
+      <div class="col-sm-12" id="left">
+        <h1>One Stop Education!!!</h1>
+        <p>An online educational or e-learning service is a website which teaches and helps students improve in certain subjects such as Maths, English and Science. These are normally used by schools to let students learn from home and complete online homework. Website owners who own good online educational services may charge schools to use these websites, however, many websites such as Bitesize, run by the BBC, are open to the public.</p>
+        <button type="button" class="btn btn-default btn-sm btn btn-success" id="myBtn">Signup</button>
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header" style="padding:35px 50px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4><span class="glyphicon glyphicon-lock"></span> Singup</h4>
+              </div>
+              <div class="modal-body" style="padding:40px 50px;">
+                <form role="form" name="registration">
+                 <label for="firstname">First Name</label>
+                 <input type="text" name="firstname" id="firstname" placeholder="">
+
+                 <label for="lastname">Last Name</label>
+                 <input type="text" name="lastname" id="lastname" placeholder="">
+
+                 <label for="email">Email</label>
+                 <input type="email" name="email" id="email" placeholder="">
+
+                 <label for="password">Password</label>
+                 <input type="password" name="password" id="password" placeholder="">
+
+
+                 <label for="password">conform_Password</label>
+                 <input type="password" name="cnfpassword" id="cnpassword" placeholder="">
+                 <div class="registrationFormAlert" id="divCheckPasswordMatch"></div>
+
+                 <button type="submit">Register</button>
+               </form>
+             </div>
+             <div class="modal-footer">
+              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+
+            </div>
+          </div>
+
+        </div>
+      </div> 
+      <button type="button" class="btn btn-default btn-sm btn btn-success" id="myBtn1">Login</button>
+      <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="padding:35px 50px;">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+              <form role="form">
+                <div class="form-group">
+                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                  <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                </div>
+                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+              <p>Not a member? <a href="#">Sign Up</a></p>
+              <p>Forgot <a href="#">Password?</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="row">
+    <h2>Welcome to Academic Earth-<span style="color:#0A94DB;">Educational</span> Institution</h2>
+    <p id="right">Academic Earth was launched on the premise that everyone deserves access to a world-class education. In 2009, we built the first collection of free online college courses from the world’s top universities. The world of open education has exploded since then, so today our curated lists of online courses are hand selected by our staff to show you the very best offerings by subject area. We also make sure there is something for everyone: whether you want to explore a new topic or advance in your current field, we bring the amazing world of academia to you for free.</p>
+  </div>
+</div>
+</body>
+</html>
