@@ -1,6 +1,6 @@
-debugger;
+
 filterSelection("all")
-debugger;
+
 function filterSelection(c) {
  var x, i;
   x = document.getElementsByClassName("column");
@@ -58,18 +58,18 @@ $(document).ready(function(){
     //   $("#rub").onclick(function(){
     //     $("rub").show();
     //   });
-    debugger;
+    
     $("#t1").hide();
-    debugger;
+    
      $("#im1").hover(function(){
-      debugger;
+      
       $("#t1").toggle();
 
     });
 
      $("#t2").hide();
       $("#im2").hover(function(){
-      debugger;
+      
       $("#t2").toggle();
       });
       $("#t3").hide();
