@@ -1,0 +1,33 @@
+h1{
+  font-size: 100px;
+}
+.table{
+  border: 1px solid black;
+}
+
+.btn-signup{
+  background-color: #0094db;
+  color:white;
+  font-size: 15px;
+  border: 1px #0094db;
+
+}
+
+.basic{
+  background-color: #3BB9FF;
+  color: white;
+}
+
+.plus{
+  background-color:#357EC7;
+  color: white;
+}
+
+.premium{
+  background-color: #E41B17;
+  color: white;
+}
+
+.ultimate{
+  background-color: #930000;
+  color: white;
