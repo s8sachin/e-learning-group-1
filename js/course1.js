@@ -63,46 +63,48 @@ $(document).ready(function(){
     debugger;
      $("#im1").hover(function(){
       debugger;
-      $("#t1").show();
+      $("#t1").toggle();
+
     });
+
      $("#t2").hide();
       $("#im2").hover(function(){
       debugger;
-      $("#t2").show();
+      $("#t2").toggle();
       });
       $("#t3").hide();
       $("#im3").hover(function(){
     
-      $("#t3").show();
+      $("#t3").toggle();
       });
       $("#t4").hide();
       $("#im4").hover(function(){
     
-      $("#t4").show();
+      $("#t4").toggle();
       });
       $("#t5").hide();
       $("#im5").hover(function(){
     
-      $("#t5").show();
+      $("#t5").toggle();
       });
       $("#t6").hide();
       $("#im6").hover(function(){
     
-      $("#t6").show();
+      $("#t6").toggle();
       });
       $("#t7").hide();
       $("#im7").hover(function(){
     
-      $("#t7").show();
+      $("#t7").toggle();
       });
       $("#t8").hide();
       $("#im8").hover(function(){
     
-      $("#t8").show();
+      $("#t8").toggle();
       });
       $("#t9").hide();
       $("#im9").hover(function(){
     
-      $("#t9").show();
+      $("#t9").toggle();
       });
 });
