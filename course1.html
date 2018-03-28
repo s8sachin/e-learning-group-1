@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/course1.css">
+		<script src="./js/course1.js"></script>
+	</head>
+	<body>
+
+<!-- MAIN (Center website) -->
+		<div class="container">
+			<div class="row">
+      	<nav class="navbar navbar-default navbar-fixed-top">
+       	 <div class="navbar-header">
+       	 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       	 		<span class="icon-bar"></span>
+       	 		<span class="icon-bar"></span>
+       	 		<span class="icon-bar"></span>                        
+       	 	</button>
+       	 	<img class="img-responsive" src="./img/logo.png" alt="no image">
+       	 </div>
+       	 <div class="collapse navbar-collapse" id="myNavbar">
+       	 	<ul class="nav navbar-nav navbar-right" id="demo">
+       	 		<li><a href="index.html"><b>Home</b></a></li>
+       	 		<li><a href="weoffer.html"><b>We offer</b></a></li>
+       	 		<li><a href="aboutus.html"><b>About us</b></a></li>
+       	 		<li class="active"><a href="course1.html"><b>Course</b></a></li>
+       	 		<li><a href="price.html"><b>Price</b></a></li>
+       	 		<li><a href="contactus.html"><b>Contactus</b></a></li>
+       	 		<li><input type="text" class="form-control input-sm" maxlength="64" placeholder="search" id="max"/</li>
+       	 		<li>
+       	 			<a id="cart-popover" class="btn" data-placement="bottom" title="Carrinho de Compras">
+       	 				<span class="glyphicon glyphicon-shopping-cart"></span>
+       	 				<span id="cart"></span>
+       	 				<!-- {{ $cart_total == 0 ? "Nada no carrinho!" : ("R$ " . number_format($cart_total, 2, ',', '.'))   }} -->
+       	 			</a>
+       	 		</li>
+       	 	</ul>
+       	 </div>
+       	</nav>
+       </div>
+
+       <center>
+       	<h1>course</h1>
+       </center>
+       <h3>
+       	<p >Lorem ipsum dolor sit amet laudantium molestias similique quisquam incidunt ut laboriosam.</p>
+       </h3>
+       <input value="0" id="product"></input>
+
+
+       <center>
+       	<div id="myBtnContainer">
+
+       		<button class="btn active btn btn-primary" onclick="filterSelection('all')"> Show all</button>
+       		<button class="btn" onclick="filterSelection('java')"> Java</button>
+       		<button class="btn" onclick="filterSelection('net')"> .Net</button>
+       		<button class="btn" onclick="filterSelection('ruby')">Ruby</button>
+
+       	</div>
+       </center>
+
+       <!-- Portfolio Gallery Grid -->
+       <div class="row">
+       	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column java" >
+       		<div class="content">
+       			<img class=responsive src="./img/1.jpg" alt="error" id="im1">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t1">java project1</h4>
+
+       		</div>
+       	</div>
+       	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column java">
+       		<div class="content">
+       			<img class=responsive src="./img/12.jpg" alt="error" id="im2">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t2">java project2</h4>
+
+
+       		</div>
+       	</div>
+       	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column java" >
+       		<div class="content">
+       			<img class=responsive src="./img/3.jpg" alt="error" id="im3">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t3">java project3</h4>
+
+
+       		</div>
+       	</div>
+       </div>
+       <div class="row">
+       	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column net" >
+       		<div  class="content">
+       			<img class=responsive src="./img/3.png" alt="error" id="im4">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t4">.net project1</h4>
+       		</div>
+       	</div>
+       	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column net">
+       		<div class="content">
+       			<img class=responsive src="./img/4.jpg" alt="error" id="im5">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t5">.net project2</h4>
+       		</div>
+       	</div>
+       	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column net" >
+       		<div class="content">
+       			<img class=responsive src="./img/6.jpg" alt="error" id="im6">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t6">.net project3</h4>
+       		</div>
+       	</div>
+       </div>
+       <div class="row">
+       	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column ruby" >
+       		<div class="content">
+       			<img class=responsive src="./img/r.jpg" alt="error" id="im7">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t7">ruby project1</h4>
+       		</div>	
+       	</div>
+       	<div class=" col-sm-4 col-md-4 col-lg-4 col-xs-4 column ruby" >
+       		<div class="content">
+       			<img class=responsive src="./img/13.png" alt="error"  id="im8">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t8">ruby project2</h4>
+       		</div>
+       	</div>
+       	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column ruby" >
+       		<div class="content">
+       			<img class=responsive src="./img/10.jpg" alt="error" id="im9">
+       			<a href="#" class="plus">+</a>
+       			<a href="#" class="minus">-</a>
+       			<h4 id="t9">ruby project3</h4>
+       		</div>
+       	</div>
+       </div>
+    </div>
+    <div class="subfooter">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<p class="text-center">Copyright © 2018<a target="_blank" href="https://www.google.com"> google.com</a></p>
+    			</div>
+    		</div>
+    	</div>
+ 		</div>
+  </body>
+</html>
