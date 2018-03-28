@@ -1,11 +1,8 @@
+// Wait for the DOM to be ready
 $(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal();
-    });
-    $("#myBtn1").click(function(){
-        $("#myModal1").modal();
-    });
-    $("form[name='registration']").validate({
+ 
+
+   $("form[name='registration']").validate({
 
       rules: {
 
@@ -45,18 +42,18 @@ $(document).ready(function(){
       }
     });
 
-function checkPasswordMatch() {
-    debugger;
-    var password = $("#password").val();
-    var confirmPassword = $("#cnpassword").val();
-        debugger;
-    if (password != confirmPassword){
-        $("#divCheckPasswordMatch").html("Passwords do not match!");
-      }
-    else{
-        $("#divCheckPasswordMatch").html("Passwords match.");
-      }
- }
+// function checkPasswordMatch() {
+//     debugger;
+//     var password = $("#password").val();
+//     var confirmPassword = $("#cnpassword").val();
+//         debugger;
+//     if (password != confirmPassword){
+//         $("#divCheckPasswordMatch").html("Passwords do not match!");
+//       }
+//     else{
+//         $("#divCheckPasswordMatch").html("Passwords match.");
+//       }
+// }
 $("#cnpassword").keyup(function() {
   var password = $("#password").val();
   $("#divCheckPasswordMatch").html(password == $(this).val() ? "Passwords match." : "Passwords do not match!");
