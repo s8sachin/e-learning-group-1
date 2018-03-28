@@ -76,20 +76,20 @@ $(document).ready(function(){
   });
   $("#product").hide();
   $(".plus").click(function(){
-    $("#product").show();
     var a=$("#product").val();
     a++;
+    $("#cart").html(a++);
     $("#product").val(a);
   });
   $(".minus").click(function(){
-   $("#product").show(); 
-   var b=$("#product").val();
-   if(b<=0)
-   {
-    return false;
-  }
-  b--;
-  $("#product").val(b);
-});
+    var b=$("#product").val();
+    if(b<=0)
+    {
+      return false;
+    }
+    b--;
+    $("#cart").html(b--);
+    $("#product").val(b);
+  });
 });
 

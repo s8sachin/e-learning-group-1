@@ -4,7 +4,7 @@
 .column {
   float: left;
   width: 33.33%;
-  display: none; 
+  display: none;
 }
 .row:after {
   content: "";
@@ -91,6 +91,6 @@
   color:white !important;
 }
 .subfooter a {
-  color:white !important;
+  color: white !important;
 }
 
