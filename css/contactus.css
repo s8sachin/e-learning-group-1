@@ -1,21 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-
-/* Styles */
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Open Sans";
   font-size: 14px;
 }
-
-/*.container {
-  width: 500px;
-  margin: 25px auto;
-}*/
-
 form {
   padding: 20px;
   background: #2c3e50;
@@ -67,7 +58,6 @@ form .error {
 .space {
   padding: 20px 0;
 }
-
 .footer h1{
   color:#fff;
 }
@@ -75,8 +65,6 @@ form .error {
   background: #020202;
   color: #949494;
 }
-/* Social Links
----------------------------------- */
 .social-links {
   padding: 0;
   list-style: none;
@@ -132,7 +120,7 @@ form .error {
 #demo li{
   margin-right:50px;
 }
- #demo li a:hover{
+#demo li a:hover{
   color:blue;
 }
 h1{
@@ -150,6 +138,6 @@ p{
   background-image: url("../img/banner.jpg");
   height:600px;
   background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

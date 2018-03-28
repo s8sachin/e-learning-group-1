@@ -1,62 +1,23 @@
-/** {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-}
-
-/* Center website */
-/*.main {
-    max-width: 1000px;
-    margin: auto;
-}
-
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-}
-
-.row {
-    margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-/*.row,
-.row > .column {
-    padding: 8px;
-}*/
 #course{
   color:blue;
 }
-/* Create three equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide all elements by default */
+  float: left;
+  width: 33.33%;
+  display: none; 
 }
-
-/* Clear floats after rows */ 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-
-/* Content */
 .content {
-    background-color: white;
-    padding: 10px;
+  background-color: white;
+  padding: 10px;
 }
-
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
-
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -64,11 +25,9 @@ h1 {
   background-color: white;
   cursor: pointer;
 }
-
 .btn:hover {
   background-color: #ddd;
 }
-
 .btn.active {
   background-color: #666;
   color: white;
@@ -109,31 +68,19 @@ h1 {
   width:100% !important;
   height:150px !important;
 }
-/*.shopping-cart {
-  width: 750px;
-  height: 423px;
-  margin: 80px auto;
-  background: #FFFFFF;
-  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-  border-radius: 6px;
- 
-  display: flex;
-  flex-direction: column;
-}*/
-
 #cart{
-    position: absolute;
-    left: 6px;
-    bottom: 12px;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    background-color: #ff6161;
-    border: solid 1px #fff;
-    font-weight: 400;
-    color:white;
-    line-height: 16px;
-    font-size: 12px;
+  position: absolute;
+  left: 6px;
+  bottom: 12px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: #ff6161;
+  border: solid 1px #fff;
+  font-weight: 400;
+  color:white;
+  line-height: 16px;
+  font-size: 12px;
 }
 #product{
   margin-left: 1000px;
@@ -144,10 +91,6 @@ h1 {
   color:white !important;
 }
 .subfooter a {
-<<<<<<< HEAD
-  color: white !important;
-=======
   color:white !important;
->>>>>>> sub-master
 }
 
