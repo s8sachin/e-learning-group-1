@@ -144,6 +144,10 @@ h1 {
   color:white !important;
 }
 .subfooter a {
+<<<<<<< HEAD
+  color: white !important;
+=======
   color:white !important;
+>>>>>>> sub-master
 }
 

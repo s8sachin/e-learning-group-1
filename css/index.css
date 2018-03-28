@@ -188,16 +188,33 @@ img {
   text-align: center;
 }
 .subfooter {
-  background-color: #0A94DB;
+  background-color: #333 !important;
   padding: 40px 0;
 }
 .subfooter a {
-  color: #323232;
+  color: white !important;
 }
 #qwerty{
   color:black;
 }
 #about{
-  font-size: 69px;
+  font-size:50px;
     margin-top: -77px;
+}
+  #qwerty6{
+    font-size:15px;
+    color:black;
+  }
+  .scrollToTop{
+  height:50px;
+  text-align:center; 
+  font-weight: bold;
+  position:fixed;
+  top:500px;
+  right:40px;
+  display:none;
+  background: url('https://image.flaticon.com/icons/svg/36/36905.svg') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+  text-decoration:none;
 }
