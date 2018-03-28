@@ -1,10 +1,10 @@
 filterSelection("all");
 function filterSelection(c) {
  var x, i;
-  x = document.getElementsByClassName("column");
+ x = document.getElementsByClassName("column");
  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
- RemoveClass(x[i], "show");
+ for (i = 0; i < x.length; i++) {
+   RemoveClass(x[i], "show");
    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
  }
 }
@@ -27,9 +27,6 @@ function RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
-
-// Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = document.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -77,7 +74,6 @@ $(document).ready(function(){
   $("#im9").hover(function(){
     $("#t9").toggle();
   });
-  
   $("#product").hide();
   $(".plus").click(function(){
     var a=$("#product").val();
@@ -96,3 +92,4 @@ $(document).ready(function(){
     $("#product").val(b);
   });
 });
+
