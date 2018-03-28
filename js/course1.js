@@ -1,9 +1,10 @@
 
-filterSelection("all")
+filterSelection("all");
 
 function filterSelection(c) {
  var x, i;
   x = document.getElementsByClassName("column");
+  debugger;
  if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
  w3RemoveClass(x[i], "show");
@@ -21,6 +22,7 @@ function w3AddClass(element, name) {
 }
 
 function w3RemoveClass(element, name) {
+  debugger;
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -141,4 +143,23 @@ $(document).ready(function(){
 //     $input.val(value);
 // });
 
+  $("#product").hide();
+
+
+$(".plus").click(function(){
+  $("#product").show();
+  var a=$("#product").val();
+  a++;
+  $("#product").val(a);
+});
+  $(".minus").click(function(){
+   $("#product").show(); 
+  var b=$("#product").val();
+  if(b<=0)
+  {
+    return false;
+  }
+  b--;
+  $("#product").val(b);
+});
 });

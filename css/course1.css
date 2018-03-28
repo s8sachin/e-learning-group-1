@@ -119,7 +119,8 @@ h1 {
   flex-direction: column;
 }*/
 
-#cart{position: absolute;
+#cart{
+    position: absolute;
     left: 6px;
     bottom: 12px;
     border-radius: 50%;
@@ -128,8 +129,11 @@ h1 {
     background-color: #ff6161;
     border: solid 1px #fff;
     font-weight: 400;
-    color: #f0f0f0;
+    color:white;
     line-height: 16px;
     font-size: 12px;
+}
+#product{
+  margin-left: 1000px;
 }
 
