@@ -74,10 +74,10 @@ $(document).ready(function(){
       })
     };
   });
-  $.toggleShowPassword({
-    field: '#password',
-    control: '#test2'
-  });
+  // $.toggleShowPassword({
+  //   field: '#password',
+  //   control: '#test2'
+  // });
   $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
       $('.scrollToTop').fadeIn();
