@@ -1,66 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>E-learning</title>
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
-  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<meta name="description" content="Responsive HTML5 Template">
-		<meta name="author" content="webthemez">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/contactus.css" rel="stylesheet">
-		<link href="css/form_val.css" rel="stylesheet">
-		<link href="css/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-		<script type="text/javascript" src="js/form_val.js"></script>
-	</head>
-	<body>
-	<div class="footer section">
-				<div class="container">
-					<h1 class="title text-center" id="contact">Contact Us</h1>
-					<div class="space"></div>
-					<div class="row">
-						<div class="col-sm-6">
-							<form>
-								<label for="firstname">Name</label>
-								<input type="text" name="firstname" id="firstname" placeholder="">
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email" placeholder="">
-								<label class="sr-only" for="message2">Message</label>
-								<textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message2" required></textarea>
-								<div class="registrationFormAlert" id="divCheckPasswordMatch"></div>
-								<button type="submit">Send</button>
-							</form>
-						</div>
-						<div class="col-sm-6">
-							<div class="footer-content">
-							<div class="widget-content">
-								<p>The Prospective Student Enquiries Centre are open for operations on Tuesday 3rd April (Easter Tuesday). Our hours of operation on this day will be from 9am-5pm. We will be back to normal operating hours on Wednesday 4th April. </p><br/>
-								<p class="contacts"><i class="fa fa-map-marker"></i> 1508 Kembery Drive, Chicago, IL 60605 </p>
-								<p class="contacts"><i class="fa fa-phone"></i> 202-314-1583</p>
-								<p class="contacts"><i class="fa fa-envelope"></i> support@biss.com</p>
-							</div>
-								<ul class="social-links">
-									<li class="facebook"><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-									<li class="twitter"><a target="_blank" href="https://twitter.com/login?lang=en"><i class="fa fa-twitter"></i></a></li>
-									<li class="googleplus"><a target="_blank" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en-US&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa fa-google-plus"></i></a></li>
-									<li class="skype"><a target="_blank" href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1522129665&rver=7.0.6730.0&wp=MBI_SSL&wreply=https%3A%2F%2Flw.skype.com%2Flogin%2Foauth%2Fproxy%3Fclient_id%3D578134%26redirect_uri%3Dhttps%253A%252F%252Fweb.skype.com%252F%26state%3D9df975dd-591c-4961-4ec1-becf26802354%26site_name%3Dlw.skype.com&lc=1033&id=293290&mkt=en-IN&psi=skype&lw=1&cobrandid=90010&client_flight=hsu%2CReservedFlight33%2CReservedFlight67"><i class="fa fa-skype"></i></a></li>
-									<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/start/join"><i class="fa fa-linkedin"></i></a></li>
-									<li class="youtube"><a target="_blank" href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26action_handle_signin%3Dtrue%26next%3D%252F%26hl%3Den&passive=true&hl=en&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa fa-youtube"></i></a></li> 
+<html>
+<head>
+	<title>ContachUs</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+  <link rel="stylesheet" href="css/contactus.css">
+  <!--  <link href="css/bootstrap/css/idx.css" rel="stylesheet">  -->
+    <link href="css/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/contactus.js"></script>
+</head>
+ <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <img class="img-responsive" src="./img/logo.png" alt="no image">
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right" id="demo">
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="weoffer.html"><b>We offer</b></a></li>
+            <li><a href="aboutus.html"><b>About us</b></a></li>
+            <li><a href="#"><b>Course</b></a></li>
+            <li><a href="#"><b>Price</b></a></li>
+            <li class="active"><a href="#"><b>Contactus</b></a></li>
+            <li><input type="text" class="form-control input-sm" maxlength="64" placeholder="search" id="max"/></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+		<div class="row" id="qwerty1">
+   <div class="col-sm-12 col-md-12 col-xs-12">
+  	<center><h1>ContactUs</h1></center>
+   </div>
+</div>
+		<div class="row" id="qwerty1">
+   <div class="col-sm-4 col-md-6 col-xs-12">
+    <form action="" name="registration">
+
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname" placeholder="">
+
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname" placeholder="">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="">
+      <label for="password">conform_Password</label>
+      <input type="password" name="cnfpassword" id="cnpassword" placeholder="">
+      <div class="registrationFormAlert" id="divCheckPasswordMatch"></div>
+
+      <button type="submit">Register</button>
+    </form>
+    </div>
+    <div class="col-sm-4 col-md-6 col-xs-12">
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Maecenas ultrices finibus erat sit amet auctor. Curabitur et metus laoreet, fermentum quam sagittis, cursus augue. </p><br/>
+				<p class="contacts"><i class="fa fa-map-marker"></i> 1508 Kembery Drive, Chicago, IL 60605 </p>
+				<p class="contacts"><i class="fa fa-phone"></i> 202-314-1583</p>
+				<p class="contacts"><i class="fa fa-envelope"></i> support@biss.com</p>
+				<ul class="social-links">
+									<li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li class="googleplus"><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li class="skype"><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li>
+									<li class="linkedin"><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li class="youtube"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li> 
 								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="subfooter">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<p class="text-center">Copyright © 2018 <a target="_blank" href="http://www.google.co.in/?gfe_rd=cr&dcr=0&ei=ncu5WsKqKary8AeX-rb4Bg.com">google.com</a>.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-	</body>
-	</html>
+   </div>
+  </div>
+  <div class="subfooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center">Copyright © 2018<a target="_blank" href="#"> google.com</a></p>
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+
+</body>
+</html>

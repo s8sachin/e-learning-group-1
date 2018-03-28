@@ -87,5 +87,4 @@ $.toggleShowPassword({
   field: '#password',
   control: '#test2'
 });
-
 });

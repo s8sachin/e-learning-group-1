@@ -1,8 +1,8 @@
 // Wait for the DOM to be ready
 $(document).ready(function(){
-  $(function() {
+ 
 
-    $("form[name='registration']").validate({
+   $("form[name='registration']").validate({
 
       rules: {
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
         },
         cnfpassword: {
           required: true,
-          minlength: 8
+         minlength: 8
         }
 
       },
@@ -30,9 +30,9 @@ $(document).ready(function(){
           required: "Please provide a password",
           minlength: "Your password must be at least 8 characters long"
         },
-        cnfpassword: {
-          required: "Please confirm a password",
-          minlength: "Your password must be at least 8 characters long"
+       cnfpassword: {
+         required: "Please confirm a password",
+          inlength: "Your password must be at least 8 characters long"
         },
         email: "Please enter a valid email address"
       },
@@ -41,7 +41,7 @@ $(document).ready(function(){
         form.submit();
       }
     });
-  });
+
 // function checkPasswordMatch() {
 //     debugger;
 //     var password = $("#password").val();
