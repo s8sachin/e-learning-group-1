@@ -1,4 +1,4 @@
-* {
+/** {
     box-sizing: border-box;
 }
 
@@ -9,7 +9,7 @@ body {
 }
 
 /* Center website */
-.main {
+/*.main {
     max-width: 1000px;
     margin: auto;
 }
@@ -24,11 +24,13 @@ h1 {
 }
 
 /* Add padding BETWEEN each column */
-.row,
+/*.row,
 .row > .column {
     padding: 8px;
+}*/
+#course{
+  color:blue;
 }
-
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
@@ -139,8 +141,13 @@ h1 {
 .subfooter {
   background-color: #333 !important;
   padding: 40px 0;
+  color:white !important;
 }
 .subfooter a {
+<<<<<<< HEAD
   color: white !important;
+=======
+  color:white !important;
+>>>>>>> sub-master
 }
 

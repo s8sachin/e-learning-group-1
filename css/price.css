@@ -5,6 +5,14 @@
   color:blue;
 }
 
+#para{
+  color: black !important;
+}
+
+#exp{
+  color: black !important;
+}
+
 h1{
   font-size: 100px;
 }
@@ -153,7 +161,11 @@ form .error {
 }
 
 .subfooter {
+<<<<<<< HEAD
   background-color: #333 !important;
+=======
+  background-color:#333 !important;
+>>>>>>> sub-master
   padding: 40px 0;
 }
 .subfooter a {
@@ -173,4 +185,8 @@ form .error {
 .footer.section {
   background: #020202;
   color: #949494;
+}
+
+.container{
+  max-width: 100%;
 }

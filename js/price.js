@@ -1,11 +1,24 @@
 $(document).ready(function(){
-    $("#myBtn").click(function(){
+    $(".myBtn").click(function(){
+      debugger
         $("#myModal").modal();
     });
-    $("#myBtn1").click(function(){
-        $("#myModal1").modal();
-    });
-    $("form[name='registration']").validate({
+  
+   //  $("#myBtn1").click(function(){
+   //    debugger
+   //      $("#myModal1").modal();
+   //  });
+
+   //  $("#myBtn2").click(function(){
+   //    debugger
+   //      $("#myModal2").modal();
+   //  });
+
+   // $("#myBtn3").click(function(){
+   //    debugger
+   //      $("#myModal3").modal();
+   //  });
+    $(".registration").validate({
 
       rules: {
 
@@ -89,3 +102,12 @@ $.toggleShowPassword({
 });
 
 });
+
+
+function mouseOver() {
+  document.getElementById("para").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("para").style.color = "black";
+}

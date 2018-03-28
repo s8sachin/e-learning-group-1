@@ -6,7 +6,6 @@ $(document).ready(function(){
         $("#myModal1").modal();
     });
     $("form[name='registration']").validate({
-
       rules: {
 
         firstname: "required",
