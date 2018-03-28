@@ -1,3 +1,10 @@
+#demo li{
+  margin-right:50px;
+}
+ #demo li a:hover{
+  color:blue;
+}
+
 h1{
   font-size: 100px;
 }
@@ -143,4 +150,27 @@ form button {
 
 form .error {
   color: #ff0000;
+}
+
+.subfooter {
+  background-color: #0A94DB;
+  padding: 40px 0;
+}
+.subfooter a {
+  color: #323232;
+}
+.section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+.space {
+  padding: 20px 0;
+}
+
+.footer h1{
+  color:#fff;
+}
+.footer.section {
+  background: #020202;
+  color: #949494;
 }
