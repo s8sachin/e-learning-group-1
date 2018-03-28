@@ -54,11 +54,11 @@ form .error {
   color: #ff0000;
 }
 .subfooter {
-  background-color: #0A94DB;
+  background-color: #333 !important;
   padding: 40px 0;
 }
 .subfooter a {
-  color: #323232;
+  color: white !important;
 }
 .section {
   background-color: #ffffff;
