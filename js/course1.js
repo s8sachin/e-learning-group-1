@@ -4,7 +4,6 @@ filterSelection("all");
 function filterSelection(c) {
  var x, i;
   x = document.getElementsByClassName("column");
-  debugger;
  if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
  RemoveClass(x[i], "show");
@@ -22,7 +21,6 @@ function AddClass(element, name) {
 }
 
 function RemoveClass(element, name) {
-  debugger;
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -48,18 +46,6 @@ for (var i = 0; i < btns.length; i++) {
 $(document).ready(function(){
   filterSelection('all');
 
-    // $("#im1").on(function(){
-       // $("#t1").show();
-   // });
-    // $("#jav").onclick(function(){
-    //     $("#jav").show();
-    //   });
-    //  $("#ne").onclick(function(){
-    //     $("#ne").show();
-    //   });
-    //   $("#rub").onclick(function(){
-    //     $("rub").show();
-    //   });
     
     $("#t1").hide();
     
@@ -109,57 +95,25 @@ $(document).ready(function(){
     
       $("#t9").toggle();
       });
-//       $('.like-btn').on('click', function() {
-//       $(this).toggleClass('is-active');
-//       });
-//       $('.minus-btn').on('click', function(e) {
-//     e.preventDefault();
-//     var $this = $(this);
-//     var $input = $this.closest('div').find('input');
-//     var value = parseInt($input.val());
- 
-//     if (value &amp;gt; 1) {
-//         value = value - 1;
-//     } else {
-//         value = 0;
-//     }
- 
-//   $input.val(value);
- 
-// });
- 
-// $('.plus-btn').on('click', function(e) {
-//     e.preventDefault();
-//     var $this = $(this);
-//     var $input = $this.closest('div').find('input');
-//     var value = parseInt($input.val());
- 
-//     if (value &amp;lt; 100) {
-//         value = value + 1;
-//     } else {
-//         value =100;
-//     }
- 
-//     $input.val(value);
-// });
-
-  $("#product").hide();
+      $("#product").hide();
+      $(".plus").click(function(){
 
 
-$(".plus").click(function(){
-  $("#product").show();
   var a=$("#product").val();
   a++;
+  $("#cart").html(a++);
   $("#product").val(a);
+
 });
   $(".minus").click(function(){
-   $("#product").show(); 
+   
   var b=$("#product").val();
   if(b<=0)
   {
     return false;
   }
   b--;
+  $("#cart").html(b--);
   $("#product").val(b);
 });
 });
