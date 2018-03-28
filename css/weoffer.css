@@ -137,11 +137,11 @@ img {
 .list-unstyled li {
   padding: 5px 0;
 }
-/*blockquote {
-  border-left: none;
-  padding-left: 0;
-  padding-right: 0;
-}*/
+blockquote {
+  border-left: none !important;
+/*  padding-left: 0;
+  padding-right: 0;*/
+}
 .transprant-bg {
   color: #ffffff;
 }
