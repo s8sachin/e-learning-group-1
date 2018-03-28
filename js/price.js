@@ -22,7 +22,7 @@ $(document).ready(function(){
         },
         cnfpassword: {
           required: true,
-          minlength: 8
+         minlength: 8
         }
 
       },
@@ -33,9 +33,9 @@ $(document).ready(function(){
           required: "Please provide a password",
           minlength: "Your password must be at least 8 characters long"
         },
-        cnfpassword: {
-          required: "Please confirm a password",
-          minlength: "Your password must be at least 8 characters long"
+       cnfpassword: {
+         required: "Please confirm a password",
+          inlength: "Your password must be at least 8 characters long"
         },
         email: "Please enter a valid email address"
       },
@@ -44,19 +44,19 @@ $(document).ready(function(){
         form.submit();
       }
     });
-  });
-// function checkPasswordMatch() {
-//     debugger;
-//     var password = $("#password").val();
-//     var confirmPassword = $("#cnpassword").val();
-//         debugger;
-//     if (password != confirmPassword){
-//         $("#divCheckPasswordMatch").html("Passwords do not match!");
-//       }
-//     else{
-//         $("#divCheckPasswordMatch").html("Passwords match.");
-//       }
-// }
+
+function checkPasswordMatch() {
+    debugger;
+    var password = $("#password").val();
+    var confirmPassword = $("#cnpassword").val();
+        debugger;
+    if (password != confirmPassword){
+        $("#divCheckPasswordMatch").html("Passwords do not match!");
+      }
+    else{
+        $("#divCheckPasswordMatch").html("Passwords match.");
+      }
+ }
 $("#cnpassword").keyup(function() {
   var password = $("#password").val();
   $("#divCheckPasswordMatch").html(password == $(this).val() ? "Passwords match." : "Passwords do not match!");
@@ -88,13 +88,4 @@ $.toggleShowPassword({
   control: '#test2'
 });
 
-
 });
-
-function mouseOver() {
-  document.getElementById("para").style.color = "red";
-}
-
-function mouseOut() {
-  document.getElementById("para").style.color = "black";
-}
