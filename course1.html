@@ -36,8 +36,7 @@
        	 		<li>
        	 			<a id="cart-popover" class="btn" data-placement="bottom" title="Carrinho de Compras">
        	 				<span class="glyphicon glyphicon-shopping-cart"></span>
-       	 				<span id="cart"></span>
-       	 				<!-- {{ $cart_total == 0 ? "Nada no carrinho!" : ("R$ " . number_format($cart_total, 2, ',', '.'))   }} -->
+       	 				<span id="cart">0</span>
        	 			</a>
        	 		</li>
        	 	</ul>
@@ -54,20 +53,15 @@
        	<p >Course descriptions provide students with basic information to evaluate and enroll in courses.</p>
        </h3>
        <input value="0" id="product"></input>
-
-
        <center>
        	<div id="myBtnContainer">
-
-       		<button class="btn active btn btn-primary" onclick="filterSelection('all')"> Show all</button>
+       	<button class="btn active btn btn-primary" onclick="filterSelection('all')"> Show all</button>
        		<button class="btn" onclick="filterSelection('java')"> Java</button>
        		<button class="btn" onclick="filterSelection('net')"> .Net</button>
        		<button class="btn" onclick="filterSelection('ruby')">Ruby</button>
-
-       	</div>
+       		</div>
        </center>
-
-       <!-- Portfolio Gallery Grid -->
+			<!-- Portfolio Gallery Grid -->
        <div class="row">
        	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column java" >
        		<div class="content">
@@ -75,7 +69,6 @@
        			<a href="#" class="plus">+</a>
        			<a href="#" class="minus">-</a>
        			<h4 id="t1">java project1</h4>
-
        		</div>
        	</div>
        	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column java">
@@ -84,8 +77,6 @@
        			<a href="#" class="plus">+</a>
        			<a href="#" class="minus">-</a>
        			<h4 id="t2">java project2</h4>
-
-
        		</div>
        	</div>
        	<div class="col-sm-4 col-md-4 col-lg-4 col-xs-4 column java" >
@@ -94,8 +85,6 @@
        			<a href="#" class="plus">+</a>
        			<a href="#" class="minus">-</a>
        			<h4 id="t3">java project3</h4>
-
-
        		</div>
        	</div>
        </div>
@@ -160,6 +149,6 @@
     			</div>
     		</div>
     	</div>
- 		</div>
+    </div>
   </body>
 </html>
