@@ -136,4 +136,11 @@ h1 {
 #product{
   margin-left: 1000px;
 }
+.subfooter {
+  background-color: #0A94DB;
+  padding: 40px 0;
+}
+.subfooter a {
+  color: #323232;
+}
 
