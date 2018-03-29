@@ -1,5 +1,12 @@
+#demo li{
+  margin-right:50px;
+}
+ #demo li a:hover{
+  color:blue;
+}
 #course{
   color:blue;
+  font-size: 30px;
 }
 /* Create three equal columns that floats next to each other */
 .column {
@@ -104,5 +111,11 @@
 }
 .subfooter a {
   color: white !important;
+}
+@media (min-width:300px) and (max-width:600px){
+.column{
+  width: 100%;
+}
+
 }
 

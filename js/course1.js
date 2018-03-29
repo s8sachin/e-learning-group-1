@@ -27,8 +27,6 @@ function RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
-
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = document.getElementsByClassName("btn");
@@ -77,12 +75,12 @@ $(document).ready(function(){
   $("#im9").hover(function(){
     $("#t9").toggle();
   });
-  
+
   $("#product").hide();
   $(".plus").click(function(){
     var a=$("#product").val();
-    a++;
-    $("#cart").html(a++);
+     a++;
+    $("#cart").html(a);
     $("#product").val(a);
   });
   $(".minus").click(function(){
@@ -92,7 +90,7 @@ $(document).ready(function(){
       return false;
     }
     b--;
-    $("#cart").html(b--);
+    $("#cart").html(b);
     $("#product").val(b);
   });
 });
