@@ -37,27 +37,4 @@ $(document).ready(function(){
   var password = $("#password").val();
   $("#divCheckPasswordMatch").html(password == $(this).val() ? "Passwords match." : "Passwords do not match!");
 });
- (function ($) {
-  $.toggleShowPassword = function (options) {
-    var settings = $.extend({
-      field: "#password",
-      control: "#toggle_show_password",
-    }, options);
-
-    var control = $(settings.control);
-    var field = $(settings.field)
-
-    control.bind('click', function () {
-      if (control.is(':checked')) {
-        field.attr('type', 'text');
-      } else {
-        field.attr('type', 'password');
-      }
-    })
-  };
-});
- $.toggleShowPassword({
-  field: '#password',
-  control: '#test2'
-});
 });

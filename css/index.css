@@ -4,13 +4,13 @@
 #demo li a:hover{
 	color:blue;
 }
-h1{
+#master{
 	margin-top:67px !important;
-	color:white !important;
+	color:white;
 	margin-left:10px !important;
 	font-size:60px !important;
 }
-p{
+#slave{
 	color:white;
 	line-height: 20px;
 	margin-left:10px !important;

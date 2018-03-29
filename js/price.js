@@ -39,46 +39,8 @@ $(document).ready(function(){
     form.submit();
   }
 });
-  function checkPasswordMatch() {
-    var password = $("#password").val();
-    var confirmPassword = $("#cnpassword").val();
-    if (password != confirmPassword){
-      $("#divCheckPasswordMatch").html("Passwords do not match!");
-    }
-    else{
-      $("#divCheckPasswordMatch").html("Passwords match.");
-    }
-  }
   $("#cnpassword").keyup(function() {
     var password = $("#password").val();
     $("#divCheckPasswordMatch").html(password == $(this).val() ? "Passwords match." : "Passwords do not match!");
   });
-  (function ($) {
-    $.toggleShowPassword = function (options) {
-      var settings = $.extend({
-        field: "#password",
-        control: "#toggle_show_password",
-      }, options);
-      var control = $(settings.control);
-      var field = $(settings.field)
-
-      control.bind('click', function () {
-        if (control.is(':checked')) {
-          field.attr('type', 'text');
-        } else {
-          field.attr('type', 'password');
-        }
-      })
-    };
-  });
-  $.toggleShowPassword({
-    field: '#password',
-    control: '#test2'
-  });
 });
-function mouseOver() {
-  document.getElementById("para").style.color = "red";
-}
-function mouseOut() {
-  document.getElementById("para").style.color = "black";
-}

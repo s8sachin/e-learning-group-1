@@ -114,23 +114,20 @@ form .error {
 .social-links li.pinterest a:hover {
   color: #cb2027;
 }
-#qwerty1{
-  background-color: black;
-}
 #demo li{
   margin-right:50px;
 }
 #demo li a:hover{
   color:blue;
 }
-h1{
+h3{
   margin-top:67px !important;
-  color:white !important;
+  color:black !important;
   margin-left:10px !important;
   font-size:60px !important;
 }
 p{
-  color:white;
+  color:black;
   line-height: 20px;
   margin-left:10px !important;
 }
